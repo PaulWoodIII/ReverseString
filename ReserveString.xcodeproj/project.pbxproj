@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DAC92A961D85E6CE00B632DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC92A951D85E6CE00B632DA /* main.m */; };
+		DAC92AA31D85EAEB00B632DA /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC92AA21D85EAEB00B632DA /* TestString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,20 @@
 /* Begin PBXFileReference section */
 		DAC92A921D85E6CE00B632DA /* ReserveString */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReserveString; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC92A951D85E6CE00B632DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAC92AA01D85EAEB00B632DA /* TestString.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestString.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC92AA21D85EAEB00B632DA /* TestString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
+		DAC92AA41D85EAEB00B632DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DAC92A8F1D85E6CE00B632DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC92A9D1D85EAEB00B632DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC92A941D85E6CE00B632DA /* ReserveString */,
+				DAC92AA11D85EAEB00B632DA /* TestString */,
 				DAC92A931D85E6CE00B632DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC92A921D85E6CE00B632DA /* ReserveString */,
+				DAC92AA01D85EAEB00B632DA /* TestString.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +73,15 @@
 				DAC92A951D85E6CE00B632DA /* main.m */,
 			);
 			path = ReserveString;
+			sourceTree = "<group>";
+		};
+		DAC92AA11D85EAEB00B632DA /* TestString */ = {
+			isa = PBXGroup;
+			children = (
+				DAC92AA21D85EAEB00B632DA /* TestString.m */,
+				DAC92AA41D85EAEB00B632DA /* Info.plist */,
+			);
+			path = TestString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +104,23 @@
 			productReference = DAC92A921D85E6CE00B632DA /* ReserveString */;
 			productType = "com.apple.product-type.tool";
 		};
+		DAC92A9F1D85EAEB00B632DA /* TestString */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC92AA51D85EAEB00B632DA /* Build configuration list for PBXNativeTarget "TestString" */;
+			buildPhases = (
+				DAC92A9C1D85EAEB00B632DA /* Sources */,
+				DAC92A9D1D85EAEB00B632DA /* Frameworks */,
+				DAC92A9E1D85EAEB00B632DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestString;
+			productName = TestString;
+			productReference = DAC92AA01D85EAEB00B632DA /* TestString.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +131,12 @@
 				ORGANIZATIONNAME = "Paul Wood";
 				TargetAttributes = {
 					DAC92A911D85E6CE00B632DA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BDB4XSJTE3;
+						DevelopmentTeamName = "Paul Wood";
+						ProvisioningStyle = Automatic;
+					};
+					DAC92A9F1D85EAEB00B632DA = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BDB4XSJTE3;
 						DevelopmentTeamName = "Paul Wood";
@@ -112,9 +157,20 @@
 			projectRoot = "";
 			targets = (
 				DAC92A911D85E6CE00B632DA /* ReserveString */,
+				DAC92A9F1D85EAEB00B632DA /* TestString */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC92A9E1D85EAEB00B632DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAC92A8E1D85E6CE00B632DA /* Sources */ = {
@@ -122,6 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC92A961D85E6CE00B632DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC92A9C1D85EAEB00B632DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC92AA31D85EAEB00B632DA /* TestString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +289,28 @@
 			};
 			name = Release;
 		};
+		DAC92AA61D85EAEB00B632DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestString/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TestString;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC92AA71D85EAEB00B632DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestString/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TestString;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -242,6 +328,14 @@
 			buildConfigurations = (
 				DAC92A9A1D85E6CE00B632DA /* Debug */,
 				DAC92A9B1D85E6CE00B632DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAC92AA51D85EAEB00B632DA /* Build configuration list for PBXNativeTarget "TestString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC92AA61D85EAEB00B632DA /* Debug */,
+				DAC92AA71D85EAEB00B632DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
